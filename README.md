@@ -38,13 +38,18 @@ tujuan project :
 
 ### Persiapan
 
+
+## requirements.txt
+```
 Setup environment libary:
-joblib==1.2.0
-matplotlib==3.7.2
+joblib==1.4.2
+matplotlib==3.8.1
+numpy==1.26.4
 pandas==2.2.2
-scikit_learn==1.3.0
+protobuf==5.27.1
+scikit_learn==1.5.0
 seaborn==0.13.2
-SQLAlchemy==2.0.21
+```
 
 
 ## Setup Environment - Anaconda
