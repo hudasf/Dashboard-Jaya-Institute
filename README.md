@@ -111,7 +111,6 @@ Beberapa rekomendasi untuk menekan angka dropout pada institusi
 3. lakukan kebijakan semester pendek untuk memperbaiki nilai siswa, sehingga siswa melihat ada harapan walaupun grade mereka tidak bagus di semester 2.
 4. pada dashboard ada prediksi untuk siswa yang berpotensi dropout, segera lakukan konseling dan bimbingan untuk siswa tersebut sebelum dia memutuskan dropout.
 5. pada dashboard streamlit ada juga rekayasa parameter siswa untuk memprediksi apakah siswa tersebut akan dropout. hal ini dapat digunakan tim institusi untuk memprediksi segera walapun hasil dari siswa belum muncul. sehingga institusi bisa menentukan langkah strategis sebelum masalah muncul. contohnya seperti melakukan review singkat materi kepada siswa sebelum ujian dimulai.
-rjalin, dan menjamin business sustainability dari sisi talent dan karyawan.
 
 USERNAME : vnhyde@gmail.com  
 PASSWORD : metabase123
