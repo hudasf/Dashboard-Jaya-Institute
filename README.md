@@ -91,7 +91,7 @@ melalui model machine learning, dapat diketahui berikut ada top 10 faktor utama 
 
 Pembuatan Dashboard khusus harapannya dapat menanggulangi issue attrition pada perusahaan. perusahaan dapat dengan real-time memantau faktor-faktor utama yang menyebabkan karyawan attrite.
 dalam dashboard juga ada fitur prediksi bagi pegawai yang akan attrite. 
-![image]
+![download](https://github.com/hudasf/Dashboard-Jaya-Institute/assets/17269323/7ea7bbc6-5483-44bd-8b3d-c76ae939c944)
 yang paling pertama adalah Curricular_units_2nd_sem_approved. yaitu faktor dari credit yang di approve oleh institusi, artinya adalah credit yang berhasil diselesaikan oleh siswa.
 data mengatakan, semakin sedikit credit yang berhasil diselesaikan siswa pada semester 2, mengakibatkan siswa memutuskan untuk melakukan dropout, hal ini juga didukung oleh faktor nomor 4 yaitu : Curricular_units_2nd_sem_grade, yang mana jika siswa sedikit menyelesaikan credit dan mengakibatkan grade nya pada semester 2 rendah akan meningkatkan keinginan untuk dropout.
 faktor terbesar lainnya adalah Tuition_fees_up_to_date, yaitu faktor pembiayaan. ketika seorang siswa tidak dapat menyelesaikan semester 2 dengan baik, namun biaya yang dikeluarkan tetap full akan memberatkan siswa dalam melanjutkan pendidikannya, dan besar kemungkinan siswa akan memutuskan untuk dropout.
@@ -100,14 +100,14 @@ maka dari itu institusi perlu membuat kebijakan atau strategi baru untuk menangg
 
 ### Rekomendasi Action Items
 
-Beberapa rekomendasi untuk mengurangi Attrition rate pada perusahaan. 
-1. Membuat kategorisasi bagi attrition alami seperti faktor Pensiun, Meninggal dan dsb. 
-2. dengan membuat kategorisasi nomor 1, perusahaan dapat fokus tanggulangi faktor attrition internal seperti resign, mangkir, hal ini dapat dilakukan dengan cara melakukan konseling dan pemantauan secara rutin, terutama untuk karyawan yang terprediksi akan attrition dalam dashboard.
-3. breakdown faktor-faktor utama penyebab attrition. lakukan penyesuaian yang dibutuhkan untuk penyebab attrition utama. contoh jika memang issue masalah salary, perusahaan dapat melakukan evaluasi salary structure apakah sudah sesuai dengan market, dan melakukan perbaikan.
-4. Lakukan program jemput bola bagi karyawan yang terprediksi akan attrition. lakukan konseling dan perbaikan yang dibutuhkan.
-5. menyiapkan model karyawan matriks, sehingga jika ada posisi karyawan yang attrite, perusahaan dapat dengan mudah melakukan switch dan kaderisasi dengan adjacent karyawan sekitar. dengan hal ini operasional dan skill transfer antar karyawan dapat terjalin, dan menjamin business sustainability dari sisi talent dan karyawan.
+Beberapa rekomendasi untuk menekan angka dropout pada institusi
+1. buat kebijakan keringan skema untuk credits yang perlu pengulangan karena tidak lulus.
+2. berikan bimbingan khusus pada mid term untuk siswa yang terprediksi akan mendapatkan hasil kurang baik disemester 2.
+3. lakukan kebijakan semester pendek untuk memperbaiki nilai siswa, sehingga siswa melihat ada harapan walaupun grade mereka tidak bagus di semester 2.
+4. pada dashboard ada prediksi untuk siswa yang berpotensi dropout, segera lakukan konseling dan bimbingan untuk siswa tersebut sebelum dia memutuskan dropout.
+5. pada dashboard streamlit ada juga rekayasa parameter siswa untuk memprediksi apakah siswa tersebut akan dropout. hal ini dapat digunakan tim institusi untuk memprediksi segera walapun hasil dari siswa belum muncul. sehingga institusi bisa menentukan langkah strategis sebelum masalah muncul. contohnya seperti melakukan review singkat materi kepada siswa sebelum ujian dimulai.
+rjalin, dan menjamin business sustainability dari sisi talent dan karyawan.
 
-DASHBOARD & Database instance Metabase : [DOWNLOAD](https://drive.google.com/file/d/1XQFXEU_XKBAkYoUzfJSCweR9aSZ80MJ-/view?usp=sharing)  
 USERNAME : vnhyde@gmail.com  
 PASSWORD : metabase123
 
