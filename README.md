@@ -1,41 +1,42 @@
-# Dashboard-Anti-Attrition-Jaya-Maju-
-simple python ML with Random Forest to help Jaya Jaya Maju company identify factors that make their employee attrite. with added prediction of current employee going to attrite
+# Dashboard Anti Drop Out Jaya Maju
+simple python ML with Gradient Boosting ML to help Jaya Institute identify factors that make their student dropouts. with added prediction of which student going to Dropouts
 
-# Proyek Pertama : Menyelesaikan Permasalahan Attrition di perusahaan Jaya Jaya Maju
-
+# Proyek Akhir : Menyelesaikan Permasalahan Dropouts di Jaya Institute
 ## Business Understanding
 
-Jaya Jaya Maju merupakan salah satu perusahaan multinasional yang telah berdiri sejak tahun 2000. Ia memiliki lebih dari 1000 karyawan yang tersebar di seluruh penjuru negeri.   
+Jaya Jaya Institut merupakan salah satu institusi pendidikan perguruan yang telah berdiri sejak tahun 2000. Hingga saat ini ia telah mencetak banyak lulusan dengan reputasi yang sangat baik. Akan tetapi, terdapat banyak juga siswa yang tidak menyelesaikan pendidikannya alias dropout.
 
-Walaupun telah menjadi menjadi perusahaan yang cukup besar, Jaya Jaya Maju masih cukup kesulitan dalam mengelola karyawan. Hal ini berimbas tingginya attrition rate (rasio jumlah karyawan yang keluar dengan total karyawan keseluruhan) hingga lebih dari 10%. 
-bila ini terus terjadi maka employee expertise dari perusahaan akan perlahan tergerus, sehingga menyisakan karyawan dengan skill yang ordinary serta dead wood. hal ini dapat mengakibatkan menurunnya kompetensi perusahaan yang dalam jangka panjang mengurangi daya saing dan keuntungan perusahaan. hal ini akan berpengaruh kepada business sustainability secara umum. maka dari itu solusi untuk mengurangi potensi attrition hadir dalam bentuk dashboard ini
+Jumlah dropout yang tinggi ini tentunya menjadi salah satu masalah yang besar untuk sebuah institusi pendidikan. Oleh karena itu, Jaya Jaya Institut ingin mendeteksi secepat mungkin siswa yang mungkin akan melakukan dropout sehingga dapat diberi bimbingan khusus.
+
+apabila trend ini terus terjadi di Jaya Institute, bukan hanya mencoreng nama sebagai institute pendidikan karena banyaknya siswa yang Dropout, namun Jaya Institute tidak akan dapat kepercayaan lagi oleh wali siswa untuk menitipkan anaknya belajar disana. jika trend ini tidak dihentikan maka kedepannya business continuity jaya institute akan terganggu, bukan tidak mungkin pada suatu hari Jaya Institute akan tinggal nama.
+project ini adalah salah satu dari upaya counter measure dari Jaya Institute untuk menanggulangi permasalahan yang terjadi.
 
 ### Permasalahan Bisnis
 
-1. Attrition yang tinggi pada perusahaan.
+1. Dropout yang tinggi pada siswa di Jaya Institute
 2. banyak faktor attrition yang terlibat, namun tidak mengetahui faktor utama.
-3. kesulitan menentukan faktor utama untuk menurunkan attrition rate.
-4. tidak ada notice/antisipasi untuk karyawan yang berpotensi attrite, sehingga membuat perusahaan tidak siap.
+3. kesulitan menentukan faktor utama untuk menurunkan penyebab utama dari keinginan siswa untuk dropout.
+4. tidak ada notice/antisipasi untuk siswa yang berpotensi dropout, sehingga membuat institusi tidak dapat melakukan konseling dan bimbingan khusus sebelum terjadi.
 
 ### Cakupan Proyek
 
 lingkup project : 
-1. Pembuatan model machine learning prediction untuk memprediksi apakah karyawan yang masih aktif akan _attrite_
-2. Pembuatan Dashboard sederhana untuk visualisasi data memantau kondisi pegawai, terutama untuk mencegah _attrite_ dengan prediksi dari machine learning.
+1. Pembuatan model machine learning prediction untuk memprediksi apakah siswa yang masih aktif akan melakukan dropout
+2. Pembuatan Dashboard sederhana untuk visualisasi data memantau kondisi siswa, terutama untuk mencegah dropout dengan prediksi dari machine learning.
+3. Pembuatan website dashboard sederhana dari streamlit, yang berfungsi memberikan parameter-parameter yang diketahui dan memprediksi kemungkinan dropout dari siswa tersebut.
 
 batasan project : 
 1. menggunakan analisa dan pengolahan data bersumber dari data yang diberikan.
 2. pemodelan penggunakan bahasa pemrograman python
 3. database menggunakan supabase
 4. dashboard menggunakan metabase(versi local)
+5. streamlit
 
 tujuan project : 
-1. pemantauan kondisi Human Resources Jaya Jaya Maju secara realtime melalui dashboard dan visualisasi data.
-2. tabel prediksi attrite untuk karyawan aktif. dapat dimanfaatkan oleh manajemen perusahaan untuk mengetahui siapa saja karyawan yang berpotensi attrite dan melakukan sikap yang diperlukan.
+1. pemantauan kondisi siswa dan kategorinya pada Jaya Institute secara realtime melalui dashboard dan visualisasi data.
+2. tabel prediksi dropout untuk siswa di Jaya Institute. dapat dimanfaatkan oleh manajemen institute untuk mengetahui siapa saja siswa yang berpotensi untuk dropout dan melakukan sikap yang diperlukan.
 
 ### Persiapan
-
-Sumber data: File dapat diakses [DISINI](https://drive.google.com/drive/folders/1wd6S5H8qHrdjIySyc-U64AvO3Y-27Hrc?usp=drive_link)
 
 Setup environment libary:
 joblib==1.2.0
@@ -55,8 +56,8 @@ pip install -r requirements.txt
 
 #### Setup Environment - Shell/Terminal
 ```
-mkdir dashboard_jayamaju
-cd dashboard_jayamaju
+mkdir dashboard_jayainst
+cd dashboard_jayainst
 pipenv install
 pipenv shell
 pip install -r requirements.txt
@@ -64,36 +65,40 @@ pip install -r requirements.txt
 
 
 
-
 ## Business Dashboard
 
 Dashboard dibuat dengan tools Docker dan Metabase dengan akses database dari supabase.
 Item pada Dashboard adalah :
-1. Jumlah Karyawan All time.
-2. Jumlah Karyawan Aktif.
-3. Pie Chart perbandingan karyawan aktif dan non aktif
-4. top 10 faktor utama yang menyebabkan attrition
-5. tabel prediksi karyawan yang akan attrition.
-6. tabel detail informasi karyawan.
+1. Jumlah Siswa all time
+2. Jumlah Siswa Aktif/Enrolled.
+3. Jumlah Siswa Lulus/Graduated
+4. Jumlah Siswa Dropout
+5. Pie Chart perbandingan antar Status Siswa
+6. top 10 faktor utama yang menyebabkan siswa dropout.
+7. tabel prediksi siswa yang akan dropout.
+8. tabel detail informasi karyawan. dengan fungsi filter, sehingga jika diprint dapat disesuaikan tampilannya.
 
-penggunaan utama dari dashboard ini adalah. perusahaan dapat memantau pergerakan Attrition Rate dari PT Jaya Jaya Maju.
-serta dapat melihat faktor utama yang menyebabkan attrition karyawan.
-dan fitur utama dapat melihat prediksi karyawan yang akan attrite dengan probabilitasnya.
+Penggunaan utama dari Dashboard ini adalah instituti dapat memantau kondisi helicopter view terkait siswanya, terutama dapat konteks Status dari Dropout sampai dengan Graduated.
+institusi juga dapat memantau faktor utama dari Siswa dropout dan melakukan penyesuaian yang diperlukan.
 
 ## Conclusion
 
+Pembuatan Dashboard ini harapannya dapat meningkatkan ketangkasan institusi dalam menanggulangi problem dropout. dengan dashboard ini institusi dapat memantau secara langsung siapa aja siswa yang dapat berpotensi untuk dropout.
+selain itu perusahaan juga dapat memantau faktor utama yang menyebabkan siswa ingin dropout, dan melakukan adjustment yang sesuai.
+
+melalui model machine learning, dapat diketahui berikut ada top 10 faktor utama siswa memutuskan dropout.
+
+
 Pembuatan Dashboard khusus harapannya dapat menanggulangi issue attrition pada perusahaan. perusahaan dapat dengan real-time memantau faktor-faktor utama yang menyebabkan karyawan attrite.
 dalam dashboard juga ada fitur prediksi bagi pegawai yang akan attrite. 
+![image]
+yang paling pertama adalah Curricular_units_2nd_sem_approved. yaitu faktor dari credit yang di approve oleh institusi, artinya adalah credit yang berhasil diselesaikan oleh siswa.
+data mengatakan, semakin sedikit credit yang berhasil diselesaikan siswa pada semester 2, mengakibatkan siswa memutuskan untuk melakukan dropout, hal ini juga didukung oleh faktor nomor 4 yaitu : Curricular_units_2nd_sem_grade, yang mana jika siswa sedikit menyelesaikan credit dan mengakibatkan grade nya pada semester 2 rendah akan meningkatkan keinginan untuk dropout.
+faktor terbesar lainnya adalah Tuition_fees_up_to_date, yaitu faktor pembiayaan. ketika seorang siswa tidak dapat menyelesaikan semester 2 dengan baik, namun biaya yang dikeluarkan tetap full akan memberatkan siswa dalam melanjutkan pendidikannya, dan besar kemungkinan siswa akan memutuskan untuk dropout.
 
-melalui model machine learning, dapat diketahui berikut adalah top 10 faktor utama karyawan melakukan attrition
-![image](https://github.com/hudasf/Dashboard-Anti-Attrition-Jaya-Maju/assets/17269323/fe581389-5c6b-4957-97c4-c8c2e57b66c4)
-secara umum, dapat diketahui faktor terbesar adalah perihal salary. hal ini lebih berdampak kepada karyawan yang memiliki umur dan pengalaman bekerja diperusahaan yang lebih lama. dapat disimpulkan, umur biasanya berbanding lurus dengan pengalaman yang dimiliki, namun jika pengalaman dan pendapatan tidak memiliki perkembangan yang selaras, akan menyebabkan karyawan berpikir untuk melakukan attrition.
-beberapa faktor tambahan adalah Jarak dari rumah ke kantor dan overtime yang dilakukan, faktor ini menyebabkan karyawan kelelahan saat bekerja, ketika melakukan overtime dan ditambah menempuh perjalanan yang cukup jauh dari rumah ke kantor.
-dengan mencari solusi dua permasalahan diatas dapat dengan baik menurunkan potensi attrition dari karyawan, dan secara langsung menekan attrition rate dari perusahaan Jaya Jaya Maju
+maka dari itu institusi perlu membuat kebijakan atau strategi baru untuk menanggulangi hal tsb.
 
-harapannya dengan ini Attrition di perusahaan dapat ditanggulangi dengan baik. dan perusahaan mampu mengantisipasi jika terjadi attrition karyawan.
-
-### Rekomendasi Action Items (Optional)
+### Rekomendasi Action Items
 
 Beberapa rekomendasi untuk mengurangi Attrition rate pada perusahaan. 
 1. Membuat kategorisasi bagi attrition alami seperti faktor Pensiun, Meninggal dan dsb. 
