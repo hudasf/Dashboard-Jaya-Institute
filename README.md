@@ -115,3 +115,10 @@ Beberapa rekomendasi untuk menekan angka dropout pada institusi
 USERNAME : vnhyde@gmail.com  
 PASSWORD : metabase123
 
+### Aplikasi Prediksi Dropout Streamlit
+dapat diakses pada : https://dashboard-jaya-institute.streamlit.app/
+
+cara menggunakan : 
+1. masukan parameter dari data siswa ke dalam aplikasi
+2. aplikasi akan memberikan feedback dan prediksi, apakah siswa tersebut akan dropout atau tidak
+
