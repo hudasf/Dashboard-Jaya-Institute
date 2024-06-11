@@ -2,8 +2,8 @@ import joblib
 import os
 
 main_dir = "D:/Tech/python/jayainstitut/" 
-model = joblib.load(os.path.join(main_dir,"model/gboost_model.joblib"))
-result_target = joblib.load(os.path.join(main_dir,"model/encoder_target.joblib"))
+model = joblib.load("model/gboost_model.joblib")
+result_target = joblib.load(main_dir,"model/encoder_target.joblib")
 
 
 def prediction(data):
