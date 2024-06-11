@@ -3,7 +3,7 @@ import os
 
 main_dir = "D:/Tech/python/jayainstitut/" 
 model = joblib.load("model/gboost_model.joblib")
-result_target = joblib.load(main_dir,"model/encoder_target.joblib")
+result_target = joblib.load("model/encoder_target.joblib")
 
 
 def prediction(data):
