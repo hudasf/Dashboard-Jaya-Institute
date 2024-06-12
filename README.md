@@ -38,6 +38,11 @@ tujuan project :
 
 ### Persiapan
 
+## Sumber Data
+```
+DICODING Jaya Institute Student Performance
+Download : [HERE](https://github.com/hudasf/Dashboard-Jaya-Institute/blob/3ec42fc8d91fce7f6a83944bfe9663a682107b9a/studentperformance.csv)
+```
 
 ## requirements.txt
 ```
@@ -50,7 +55,6 @@ protobuf==5.27.1
 scikit_learn==1.5.0
 seaborn==0.13.2
 ```
-
 
 ## Setup Environment - Anaconda
 ```
@@ -67,8 +71,6 @@ pipenv install
 pipenv shell
 pip install -r requirements.txt
 ```
-
-
 
 ## Business Dashboard
 
@@ -93,9 +95,6 @@ selain itu perusahaan juga dapat memantau faktor utama yang menyebabkan siswa in
 
 melalui model machine learning, dapat diketahui berikut ada top 10 faktor utama siswa memutuskan dropout.
 
-
-Pembuatan Dashboard khusus harapannya dapat menanggulangi issue attrition pada perusahaan. perusahaan dapat dengan real-time memantau faktor-faktor utama yang menyebabkan karyawan attrite.
-dalam dashboard juga ada fitur prediksi bagi pegawai yang akan attrite. 
 ![download](https://github.com/hudasf/Dashboard-Jaya-Institute/assets/17269323/7ea7bbc6-5483-44bd-8b3d-c76ae939c944)
 yang paling pertama adalah Curricular_units_2nd_sem_approved. yaitu faktor dari credit yang di approve oleh institusi, artinya adalah credit yang berhasil diselesaikan oleh siswa.
 data mengatakan, semakin sedikit credit yang berhasil diselesaikan siswa pada semester 2, mengakibatkan siswa memutuskan untuk melakukan dropout, hal ini juga didukung oleh faktor nomor 4 yaitu : Curricular_units_2nd_sem_grade, yang mana jika siswa sedikit menyelesaikan credit dan mengakibatkan grade nya pada semester 2 rendah akan meningkatkan keinginan untuk dropout.
