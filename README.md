@@ -118,7 +118,7 @@ PASSWORD : metabase123
 dapat diakses pada : https://dashboard-jaya-institute.streamlit.app/
 
 cara menjalankan aplikasi :
-1. pastikan struktur file sudah benar
+1. pastikan struktur file sudah benar\
    -jayaappSt.py\
    -prediction.py\
    -data_preprocessing.py\
