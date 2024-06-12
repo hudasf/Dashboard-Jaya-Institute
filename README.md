@@ -117,7 +117,22 @@ PASSWORD : metabase123
 ### Aplikasi Prediksi Dropout Streamlit
 dapat diakses pada : https://dashboard-jaya-institute.streamlit.app/
 
-cara menggunakan : 
+cara menjalankan aplikasi :
+1. pastikan struktur file sudah benar
+   >jayaappSt.py
+   >prediction.py
+   >data_preprocessing.py
+   >model/
+         > kumpulan model
+2. sesuaikan file path pada code python jika ada perbedaan.
+3. compile program pada IDE python. dan pastikan tidak terjadi error
+4. lakukan running script yang tampil pada saat compile code. contoh
+   ```
+   streamlit run d:/Tech/python/jayainstitut/jayaappSt.py
+   ```
+5. aplikasi akan terbuka pada browser di tab baru.
+
+cara menggunakan aplikasi: 
 1. masukan parameter dari data siswa ke dalam aplikasi
 2. aplikasi akan memberikan feedback dan prediksi, apakah siswa tersebut akan dropout atau tidak
 
