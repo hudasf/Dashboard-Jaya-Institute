@@ -119,11 +119,11 @@ dapat diakses pada : https://dashboard-jaya-institute.streamlit.app/
 
 cara menjalankan aplikasi :
 1. pastikan struktur file sudah benar
-   >jayaappSt.py
-   >prediction.py
-   >data_preprocessing.py
-   >model/
-         > kumpulan model
+   -jayaappSt.py
+   -prediction.py
+   -data_preprocessing.py
+   -model/
+      └───model kumpulan model
 2. sesuaikan file path pada code python jika ada perbedaan.
 3. compile program pada IDE python. dan pastikan tidak terjadi error
 4. lakukan running script yang tampil pada saat compile code. contoh
